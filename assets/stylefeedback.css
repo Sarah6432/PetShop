@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 190px;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 0;
+    margin: 0;
+    background-color: #c65ad4;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li a {
+    color: rgb(198, 90, 212);
+    text-decoration: none;
+}
+
+.icons {
+    color: rgb(198, 90, 212);
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgb(210, 112, 223);
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    overflow: hidden;
+    max-width: 240px;
+}
+
+.search-txt {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    transition: width 0.4s, padding 0.4s;
+    width: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bnt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(210, 112, 223);
+    transition: background 0.3s;
+}
+
+.search-bnt i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-box:hover {
+    background: rgb(218, 131, 203);
+}
+
+.search-box:hover .search-txt {
+    width: 180px;
+    padding: 0 6px;
+    color: #fff;
+}
+
+.search-box:hover .search-bnt {
+    background: rgb(218, 131, 203);
+}
+
+.fa-magnifying-glass {
+    color: #fff;
+}
+
+
+::placeholder {
+    color: #fff;
+}
+
+.categorias {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgb(220, 220, 220);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 10px;
+    gap: 30px;
+
+}
+
+
+.animais {
+    text-decoration: none;
+    color: rgb(198, 90, 212);
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+
+.animais:hover {
+    color: #2bd8d8;
+    transform: scale(1.1);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 80px;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid #202020;
+    box-shadow: 8px 8px 10px #888888;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 220px;
+    transition: 0.6s all ease;
+    unicode-bidi: isolate;
+}
+
+.disconto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 112, 223);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: #fff;
+}
+
+.card-image {
+   gap: 10px;
+   display: flex;
+   align-items: left;
+   justify-content: start;
+   padding: 10px;
+}
+.produto {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    overflow: clip;
+    border-radius: 50%;
+}
+
+.card-text {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.card-name {
+    height: 60px;
+    color: black;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card-preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+}
+
+.preco {
+    font-size: 22px;
+}
+
+.footer-content {
+    padding: 30px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.footer-content li {
+    list-style-type: none;
+}
+
+.container-social {
+    position: relative;
+}
+
+.fa-brands,
+fab {
+    font-weight: 400;
+}
+
+.fa-brands,
+fab {
+    font-family: "Font Awesome 6 brands";
+}
+
+.texto {
+    visibility: hidden;
+    opacity: 0;
+    color: #c65ad4;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -60px;
+    transition: opacity 2.5s, transform 0.5s;
+}
+
+.container-social {
+    position: relative;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+}
+.card-estrela {
+    align-items: center;
+    height: 20px;
+    width: 10px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 5%;
+    justify-content: baseline;
+    font-size: 12px;
+    
+}
+.nome{
+    margin-top: 6%;
+}

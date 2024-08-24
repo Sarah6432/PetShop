@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVerso: Um universo de mimos para seu pet.</title>
+    <link href="/assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="/assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="pesquisa" placeholder="O que você procura..?">
+            <a class="search-bnt" href="#"></a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav class="icons">
+            <ul>
+                <li><a href="sobre-nos.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
+                <li><a href="formulário.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
+                <li><a href="endereco.html"><i class="fas fa-map-marker-alt" title="Endereço" class="menu"></i></a></li>
+                <li title="Entre ou cadastre-se"><a href="Entrar.html">Entrar </a>|<a href="#"> Cadastrar</a></li>
+                <div class="animation start-home"></div>
+            </ul>
+        </nav>
+    </header>
+    <div class="categorias">
+        <a class="animais" href="cachorro.html"><i class="fas fa-dog" title="Cachorro"></i></a>
+        <a class="animais" href="gato.html"><i class="fas fa-cat" title="Gato"></i></a>
+        <a class="animais" href="passaro.html"><i class="fas fa-dove" title="Pássaro"></i></a>
+        <a class="animais" href="peixe.html"><i class="fas fa-fish" title="Peixe"></i></a>
+        <a class="animais" href="outros.html">outros pets</a>
+        <a class="animais" href="serviços.html" title="serviços">serviços</a>
+        <a class="animais" href="produtos.html">produtos</a>
+    </div>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="imagem" src="/assets/cachorro.png" alt="cachorro">
+            </div>
+
+            <div class="slide-box">
+                <img class="imagem" src="/assets/gato.png" alt="gato">
+            </div>
+
+            <div class="slide-box">
+                <img class="imagem" src="/assets/principal.png" alt="passaro">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    <main id="produtos">
+        <div class="cards">
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" src="/assets/raçãoimg.jpeg" alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Premier para shih zu - Filhotes 1kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$42,00</span>
+                        <span class="desconto">R$95,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãoimg2.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Golden Seleção Natural - 3kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$149,89</span>
+                        <span class="desconto">R$300,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãoimg3.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Golden Seleção Natural - 3kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$90,89</span>
+                        <span class="desconto">R$180,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãogato1.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração whiskas - 10,1kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$90,89</span>
+                        <span class="desconto">R$180,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãogato2.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Nutrilus Adultos - 10,1kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$149,89</span>
+                        <span class="desconto">R$300,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãogato3.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Friskies Mix De Carnes - 10,1kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$99,99</span>
+                        <span class="desconto">R$200,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐ 4.5</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãogato4.webp" alt="ração com desconto"
+                        title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name"> Ração Fómula Natural - 3kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$249,89</span>
+                        <span class="desconto">R$500,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãopassaro1.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração de Passáro - 3kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$49,89</span>
+                        <span class="desconto">R$100,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãopassaro2.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração de Passáro Super Premiun - 4kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$249,89</span>
+                        <span class="desconto">R$500,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãopassaro3.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Passaros do Vale - 5kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$49,89</span>
+                        <span class="desconto">R$100,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãopassaro4.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Alcon Club Papa Para Filhotes - 160g</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$49,89</span>
+                        <span class="desconto">R$100,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/racaopeixes1.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Para Peixes Carpa - 6kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$159,89</span>
+                        <span class="desconto">R$300,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/raçãopeixes4.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Para Peixes AQUA - 25kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$500,89</span>
+                        <span class="desconto">R$859,90</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>50% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/racaopeixes5.webp"
+                        alt="ração com desconto" title="ração premier">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Ração Para Peixes ACQUA Line - 25kg</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$149,89</span>
+                        <span class="desconto">R$300,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>10% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/mimos1.webp" alt="banheiro inteligente"
+                        title="banheiro inteligente">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Banheiro Inteligente Para Cães - Weasy</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$500,00</span>
+                        <span class="desconto">R$550,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>10% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/mimos2.webp" alt="caminha"
+                        title="caminha">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Tocca Caminha Nuvem Para Cachorro</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$219,89</span>
+                        <span class="desconto">R$300,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>10% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/mimos3.webp" alt="caminha"
+                        title="caminha">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Tocca Caminha Nuvem Para Cachorro</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$19,89</span>
+                        <span class="desconto">R$40,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐ 4.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+            <article class="card">
+                <div class="disconto">
+                    <p>40% OFF</p>
+                </div>
+                <div class="card-image">
+                    <img class="produto" width="250" height="255" src="/assets/mimos4.webp" alt="caminha"
+                        title="caminha">
+                </div>
+                <div class="card-text">
+                    <p class="card-name">Cama para Animais Pequenos e Médios - Hoopet Urso</p>
+                </div>
+                <div class="card-preco">
+                    <div class="preco">
+                        <span class="real">R$219,89</span>
+                        <span class="desconto">R$400,00</span>
+                    </div>
+                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                    <div class="card-button"> </div>
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Loja</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="formulário.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="políticasdeprivacidade.html">Políticas de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de Serviço</a>
+                    </li>
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="container-social">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <span class="texto">Instagram</span>
+                </div>
+             <div class="container-social">
+             <li>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+             </li>
+             <span class="texto">Twitter</span>
+             </div>
+             <div class="container-social">
+                <li>
+                   <a href="#">
+                       <i class="fa-brands fa-facebook"></i>
+                   </a>
+                </li>
+                <span class="texto">Facebook</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>
+                <i>© 2024 PetVerso.Todos os direitos reservados.</i>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
