@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras.</title>
+    <link href="assets/comprar.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/stylecompras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="pesquisa" placeholder="O que você procura..?">
+            <a class="search-bnt" href="#"></a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container-tabela" style="display: block;">
+            <div class="tabela">
+                <p id="prod">Produto</p>
+                <p id="pre">Preço</p>
+                <p id="quan">Quantidade</p>
+            </div>
+            <div class="carrinho">
+                <ul id="cart">
+                    <li id="product">
+                        <div class="product-info">
+                            <img id="" src="" alt="">
+                        </div>
+                        <div class="product-price">
+                            <p id="itemPrice"></p>
+                        </div>
+                        <div class="button-group">
+                            <button id="decreaseBtn">-</button>
+                            <input type="number" id="itemQnt" min="1" max="100" value="1" readonly="true">
+                            <button id="increaseBtn">+</button>
+                            <p class="remove-text" style="cursor: pointer;">Remover</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-pedido" style="display: block;">
+            <div class="pedido">
+                <p class="Resumo">Resumo do pedido</p>
+            </div>
+            <article>
+                <div class="content-pedido"></div>
+            </article>
+        </div>
+    </main>
