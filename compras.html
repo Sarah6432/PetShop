@@ -20,6 +20,16 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
+    <div class="categorias">
+        <a class="animais" href="cachorro.html"><i class="fas fa-dog" title="Cachorro"></i></a>
+        <a class="animais" href="gato.html"><i class="fas fa-cat" title="Gato"></i></a>
+        <a class="animais" href="passaro.html"><i class="fas fa-dove" title="Pássaro"></i></a>
+        <a class="animais" href="peixe.html"><i class="fas fa-fish" title="Peixe"></i></a>
+        <a class="animais" href="outros.html">outros pets</a>
+        <a class="animais" href="serviços.html" title="serviços">serviços</a>
+        <a class="animais" href="produtos.html">produtos</a>
+        <a class="animais" href="compras.html"><i class="fas fa-shopping-cart" title="Carrinho"></i></a>
+    </div>
     <main>
         <div class="container-tabela" style="display: block;">
             <div class="tabela">
@@ -29,7 +39,7 @@
             </div>
             <div class="carrinho">
                 <ul id="cart">
-                    <li id="product">
+                    <li id="product" class="__web-inspector-hide-shortcut__">
                         <div class="product-info">
                             <img id="" src="" alt="">
                         </div>
@@ -51,7 +61,64 @@
                 <p class="Resumo">Resumo do pedido</p>
             </div>
             <article>
-                <div class="content-pedido"></div>
+                <div class="content-pedido">
+                    <div class="content-subtotal">
+                        <p>Subtotal</p>
+                        <p id="sub-total-preco">R$0,00</p>
+                    </div>
+                    <div class="content-entrega">
+                        <p>Entrega</p>
+                        <p id="valor-entrega">R$0,00</p>
+                    </div>
+                    <div id="cupom"></div>
+                    <div class="content-pre-total">
+                        <p id="Total">Total</p>
+                        <p id="total-preco">R$0,00</p>
+                    </div>
+                    <div class="content-desconto">
+                        <div class="box-des">
+                            <p id="pric">R$0,00</p>
+                            <p id="price-descont">R$0,00</p>
+                        </div>
+                        <p id="pix">
+                            <i>Valor com 10% de desconto no boleto ou PIX</i>
+                        </p>
+                    </div>
+                    <div class="content-comprar">
+                        <a href="index.html"><button id="add">Adicionar mais produtos</button></a>
+                        <button id="fechar-ped">FECHAR PEDIDO</button>
+                    </div>
+                    <div class="container-formas-pag">
+                        <h2>Formas de Pagamento</h2>
+                        <div class="formas-pag">
+                            <div class="content-pag">
+                                <img id="pag-1" src="assets/pag1.1.webp">
+                                <img id="pag-2" src="assets/pag1.2.webp">
+                                <img id="pag-3" src="assets/pag1.3.webp">
+                                <img id="pag-4" src="assets/pag1.4.webp">
+                                <img id="pag-5" src="assets/pag1.5.webp">
+                            </div>
+                            <div class="content-pag2">
+                                <img id="pag-6" src="assets/pag2.6.webp">
+                                <img id="pag-7" src="assets/pag2.7.webp">
+                                <img id="pag-8" src="assets/pag2.8.webp">
+                                <img id="pag-9" src="assets/pag2.9.webp">
+                                <img id="pag-10" src="assets/pag2.10.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-cep">
+                        <h1 id="name-consulta">Entrega</h1>
+                        <div class="content-cep">
+                            <div class="pesquisa">
+                                <input type="text" id="cep" placeholder="Digite seu CEP">
+                                <label class="form-pesquisa" for="cep"></label>
+                            </div>
+                            <button onclick="buscarEndereco()">Calcular</button>
+                            <p id="nao-sei-cep">Não sei meu CEP</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
     </main>
