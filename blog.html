@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback.</title>
-    <link href="/assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/stylefeedback.css">
+    <title>PetVerso: Um universo de mimos para seu pet.</title>
+    <link href="assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styleblog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="/assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
+        <a href="index.html"><img class="logo" src="assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
         <div class="search-box">
             <input class="search-txt" type="text" name="pesquisa" placeholder="O que você procura..?">
             <a class="search-bnt" href="#"></a>
@@ -22,7 +22,7 @@
         <nav class="icons">
             <ul>
                 <li><a href="sobre.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
-                <li><a href="contato.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
+                <li><a href="formulário.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
                 <li title="Entre ou cadastre-se"><a href="#">Entrar </a>|<a href="#"> Cadastrar</a></li>
                 <div class="animation start-home"></div>
             </ul>
@@ -43,74 +43,66 @@
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/pessoa1.jpeg" alt="petiscos" title="petiscos">
-                    <p class="nome">Maria Santos</p>
+                    <img class="produto" height="360" src="assets/blog1.png" alt="Blog" title="BLOG">
                 </div>
-                <div class="card-text">
-                    <p class="card-name">"Excelente atendimento! Meu gato sempre sai feliz e bem cuidado. Recomendo demais!"</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
+            <article class="card">
+                <div class="disconto">
                 </div>
+                <div class="card-image">
+                    <img class="produto" height="360" src="assets/blog2.png" alt="Blog" title="BLOG">
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
+            <article class="card">
+                <div class="disconto">
+                </div>
+                <div class="card-image">
+                    <img class="produto" height="361" src="assets/blog3.png" alt="Blog" title="BLOG">
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
+            <article class="card">
+                <div class="disconto">
+                </div>
+                <div class="card-image">
+                    <img class="produto" height="360" src="assets/blog4.png" alt="Blog" title="BLOG">
+                </div>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/pessoa2.jpeg" alt="petiscos" title="petiscos">
-                    <p class="nome">Roberto Silva</p>
+                    <img class="produto" height="360" src="assets/blog5.png" alt="Blog" title="BLOG">
                 </div>
-                <div class="card-text">
-                    <p class="card-name">"Adorei o serviço! A equipe é super atenciosa e o local é bem organizado. Com certeza virei cliente fiel."</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                </div>
-            </article>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/pessoa3.jpeg" alt="petiscos" title="petiscos">
-                    <p class="nome">Ana Oliveiras</p>
+                    <img class="produto" height="360" src="assets/blog6.png" alt="Blog" title="BLOG">
                 </div>
-                <div class="card-text">
-                    <p class="card-name">"Levei meu gato para um banho e tosa e fiquei muito satisfeita com o resultado. O ambiente é acolhedor e os profissionais são incríveis!"</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                </div>
-            </article>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/pessoa4.jpeg" alt="petiscos" title="petiscos">
-                    <p class="nome">Juliana Ferreira</p>
+                    <img class="produto" height="360" src="assets/blog7.png" alt="Blog" title="BLOG">
                 </div>
-                <div class="card-text">
-                    <p class="card-name">"Melhor petshop da região! Preços justos e atendimento de primeira. Meu cachorro adora vir aqui."</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                </div>
-            </article>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/pessoa5.jpeg" alt="petiscos" title="petiscos">
-                    <p class="nome">Mariana Santos</p>
+                    <img class="produto" height="360" src="assets/blog8.png" alt="Blog" title="BLOG">
                 </div>
-                <div class="card-text">
-                    <p class="card-name">"Não tenho palavras para descrever o quanto sou grata pelo cuidado que tiveram com meu cachorro. Atendimento impecável e muito carinho com os animais."</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="disconto">
-                </div>
-                <div class="card-image">
-                    <img class="produto" src="/assets/pessoa6.jpg" alt="petiscos" title="petiscos">
-                    <p class="nome">Maria Lima</p>
-                </div>
-                <div class="card-text">
-                    <p class="card-name">Atendimento excelente, foram extremamente simpaticos.</p>
-                    <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                </div>
-            </article>
+                <button class="button-comprar" onclick="addToCart(event)"><a href="formulário.html">Mais Informações</a></button>
+            </article> 
     </main>
     <footer>
         <div class="footer-content">
@@ -162,21 +154,21 @@
                     </li>
                     <span class="texto">Instagram</span>
                 </div>
-                <div class="container-social">
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </li>
-                    <span class="texto">Twitter</span>
-                </div>
-                <div class="container-social">
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <span class="texto">Facebook</span>
+             <div class="container-social">
+             <li>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+             </li>
+             <span class="texto">Twitter</span>
+             </div>
+             <div class="container-social">
+                <li>
+                   <a href="#">
+                       <i class="fa-brands fa-facebook"></i>
+                   </a>
+                </li>
+                <span class="texto">Facebook</span>
                 </div>
             </div>
         </div>

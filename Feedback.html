@@ -4,21 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peixe.</title>
-    <link href="/assets/peixe.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>Feedback.</title>
+    <link href="assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/stylefeedback.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="/assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
+        <a href="index.html"><img class="logo" src="assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
         <div class="search-box">
             <input class="search-txt" type="text" name="pesquisa" placeholder="O que você procura..?">
             <a class="search-bnt" href="#"></a>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <nav class="icons">
+            <ul>
+                <li><a href="sobre.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
+                <li title="Entre ou cadastre-se"><a href="#">Entrar </a>|<a href="#"> Cadastrar</a></li>
+                <div class="animation start-home"></div>
+            </ul>
+        </nav>
     </header>
     <div class="categorias">
         <a class="animais" href="cachorro.html"><i class="fas fa-dog" title="Cachorro"></i></a>
@@ -29,131 +37,79 @@
         <a class="animais" href="serviços.html" title="serviços">serviços</a>
         <a class="animais" href="produtos.html">produtos</a>
     </div>
-    <section>
-        <div>
-            <img id="banner" src="/assets/Peixesbanner.png" alt="cachorro" title="cachorro">
-        </div>
-    </section>
     <main>
         <div class="cards">
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" src="/assets/petiscopeixe1.webp" width="30" height="290" alt="petiscos" title="petiscos">
+                    <img class="produto" src="assets/pessoa1.jpeg" alt="petiscos" title="petiscos">
+                    <p class="nome">Maria Santos</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Petiscos Para Peixes de Grande Porte - 500g</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$15,00</span>
-                        <span class="desconto">R$18,00</span>
-                    </div>
+                    <p class="card-name">"Excelente atendimento! Meu gato sempre sai feliz e bem cuidado. Recomendo demais!"</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" height="290" src="/assets/petiscopeixe2.webp" alt="petiscos"
-                        title="ração premier">
+                    <img class="produto" src="assets/pessoa2.jpeg" alt="petiscos" title="petiscos">
+                    <p class="nome">Roberto Silva</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Mini Waffers Mix Para Peixes - 500g</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$10,89</span>
-                        <span class="desconto">R$18,00</span>
-                    </div>
+                    <p class="card-name">"Adorei o serviço! A equipe é super atenciosa e o local é bem organizado. Com certeza virei cliente fiel."</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" height="290" src="/assets/petiscopeixe3.webp" alt="petiscos"
-                        title="petiscos">
+                    <img class="produto" src="assets/pessoa3.jpeg" alt="petiscos" title="petiscos">
+                    <p class="nome">Ana Oliveiras</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Petiscos Tetra Pond - 500g</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$15,89</span>
-                        <span class="desconto">R$20,00</span>
-                    </div>
+                    <p class="card-name">"Levei meu gato para um banho e tosa e fiquei muito satisfeita com o resultado. O ambiente é acolhedor e os profissionais são incríveis!"</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" height="290" src="/assets/aquario1.webp" alt="Brinquedos"
-                        title="brinquedos">
+                    <img class="produto" src="assets/pessoa4.jpeg" alt="petiscos" title="petiscos">
+                    <p class="nome">Juliana Ferreira</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Aquário 60 litros Quli Blackbox</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$300,89</span>
-                        <span class="desconto">R$780,00</span>
-                    </div>
+                    <p class="card-name">"Melhor petshop da região! Preços justos e atendimento de primeira. Meu cachorro adora vir aqui."</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" height="290" src="/assets/aquario2.webp" alt="Brinquedos"
-                        title="brinquedos">
+                    <img class="produto" src="assets/pessoa5.jpeg" alt="petiscos" title="petiscos">
+                    <p class="nome">Mariana Santos</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Aquário de Parede 140x15x65 Completo Acabamento Moldura</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$1000,89</span>
-                        <span class="desconto">R$1800,00</span>
-                    </div>
+                    <p class="card-name">"Não tenho palavras para descrever o quanto sou grata pelo cuidado que tiveram com meu cachorro. Atendimento impecável e muito carinho com os animais."</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
             <article class="card">
                 <div class="disconto">
                 </div>
                 <div class="card-image">
-                    <img class="produto" height="290" src="/assets/aquario3.webp" alt="Brinquedos"
-                        title="brinquedos">
+                    <img class="produto" src="assets/pessoa6.jpg" alt="petiscos" title="petiscos">
+                    <p class="nome">Maria Lima</p>
                 </div>
                 <div class="card-text">
-                    <p class="card-name">Aquario De Peixes Transparente Decorado</p>
-                </div>
-                <div class="card-preco">
-                    <div class="preco">
-                        <span class="real">R$11,89</span>
-                        <span class="desconto">R$15,00</span>
-                    </div>
+                    <p class="card-name">Atendimento excelente, foram extremamente simpaticos.</p>
                     <p class="card-estrela">⭐⭐⭐⭐⭐ 5.0</p>
-                    <div class="card-button"> </div>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Comprar</button>
             </article>
     </main>
     <footer>
@@ -206,21 +162,21 @@
                     </li>
                     <span class="texto">Instagram</span>
                 </div>
-             <div class="container-social">
-             <li>
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-             </li>
-             <span class="texto">Twitter</span>
-             </div>
-             <div class="container-social">
-                <li>
-                   <a href="#">
-                       <i class="fa-brands fa-facebook"></i>
-                   </a>
-                </li>
-                <span class="texto">Facebook</span>
+                <div class="container-social">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <span class="texto">Twitter</span>
+                </div>
+                <div class="container-social">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <span class="texto">Facebook</span>
                 </div>
             </div>
         </div>
@@ -230,4 +186,7 @@
             </p>
         </div>
     </footer>
-    </html>
+
+</body>
+
+</html>
