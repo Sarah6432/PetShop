@@ -4,20 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços.</title>
-    <link href="/assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/styleserviços.css">
+    <title>Entre em Contato Conosco.</title>
+    <link href="assets/logoofc.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/stylesobre.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="/assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
+        <a href="index.html"><img class="logo" src="assets/logo1.png" alt="PetVerso-logo" title="PetVerso"></a>
         <div class="search-box">
             <input class="search-txt" type="text" name="pesquisa" placeholder="O que você procura..?">
             <a class="search-bnt" href="#"></a>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <nav class="icons">
+                <ul>
+                    <li><a href="sobre-nos.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
+                    <li><a href="formulário.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
+                    <li><a href="endereco.html"><i class="fas fa-map-marker-alt" title="Endereço" class="menu"></i></a></li>
+                    <li title="Entre ou cadastre-se"><a href="#">Entrar </a>|<a href="#"> Cadastrar</a></li>
+                    <div class="animation start-home"></div>
+                </ul>
+        </nav>
     </header>
     <div class="categorias">
         <a class="animais" href="cachorro.html"><i class="fas fa-dog" title="Cachorro"></i></a>
@@ -28,40 +38,31 @@
         <a class="animais" href="serviços.html" title="serviços">serviços</a>
         <a class="animais" href="produtos.html">produtos</a>
     </div>
-    <main>
-        <div class="cards">
-            <article class="card">
-                <div>
+    <main class="formulario-contato">
+        <section>
+            <h2 class="campo-form">Entre em Contato Conosco</h2>
+            <form action="#" method="post">
+                <div class="campo-f">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
-                <div class="card-image">
-                    <img class="produto" height="380" src="/assets/serviçosveterinario.png" alt="ração com desconto" title="ração premier">
+                <div class="campo-f">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Mais Informações</button>
-            </article>   
-            <article class="card">
-                <div class="disconto">
+                <div class="campo-f">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
                 </div>
-                <div class="card-image">
-                    <img class="produto" height="380" src="/assets/serviçoveterinario2.png" alt="ração com desconto" title="ração premier">
+                <div class="campo-f">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                 </div>
-                <button class="button-comprar" onclick="addToCart(event)">Mais Informações</button>
-            </article>  
-            <article class="card">
-                <div>
+                <div class="campo-f">
+                    <button type="submit">Enviar</button>
                 </div>
-                <div class="card-image">
-                    <img class="produto" height="380" src="/assets/serviçoveterinario3.png" alt="ração com desconto" title="ração premier">
-                </div>
-                <button class="button-comprar" onclick="addToCart(event)">Mais Informações</button>
-            </article>  
-            <article class="card">
-                <div>
-                </div>
-                <div class="card-image">
-                    <img class="produto" height="380" src="/assets/serviçoveterinario4.png" alt="ração com desconto" title="ração premier">
-                </div>
-                <button class="button-comprar" onclick="addToCart(event)">Mais Informações</button>
-            </article>   
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -113,21 +114,21 @@
                     </li>
                     <span class="texto">Instagram</span>
                 </div>
-             <div class="container-social">
-             <li>
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-             </li>
-             <span class="texto">Twitter</span>
-             </div>
-             <div class="container-social">
-                <li>
-                   <a href="#">
-                       <i class="fa-brands fa-facebook"></i>
-                   </a>
-                </li>
-                <span class="texto">Facebook</span>
+                <div class="container-social">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <span class="texto">Twitter</span>
+                </div>
+                <div class="container-social">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <span class="texto">Facebook</span>
                 </div>
             </div>
         </div>
