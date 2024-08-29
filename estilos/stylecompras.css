@@ -819,3 +819,11 @@ fab {
 body {
     overflow-x: hidden;
 }
+#cupom-input:focus{
+    border-color: #c65ad4;
+    outline: none;
+}
+#cep:focus{
+    border-color: #c65ad4;
+    outline: none;
+}
