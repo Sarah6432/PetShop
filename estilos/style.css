@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -187,8 +187,10 @@ section.slider {
     transition: 1s;
 }
 
-.slide-box img {
-    width: 100%;
+@media(min-width:10px) {
+    .slide-box img {
+        width: 100%;
+    }
 }
 
 .nav-manual,
@@ -222,6 +224,7 @@ section.slider {
 #radio2:checked~.nav-auto .auto-btn2,
 #radio3:checked~.nav-auto .auto-btn3 {
     background-color: rgb(218, 131, 203);
+    display: block;
 }
 
 #radio1:checked~.primeiro {
@@ -236,11 +239,12 @@ section.slider {
     margin-left: -50%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px ) and (min: 
+767px) {
 
     .nav-auto,
     .nav-manual {
-        margin-top: 60%;
+        margin-top: 50%;
     }
 }
 
@@ -442,7 +446,8 @@ fab {
     background-color: rgb(40, 40, 40);
     color: #fff;
 }
-#banner{
+
+#banner {
     border-radius: 20px;
     display: flex;
     width: 90%;
@@ -452,6 +457,7 @@ fab {
 }
 
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         gap: 10px;
