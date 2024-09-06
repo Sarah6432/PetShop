@@ -197,7 +197,7 @@ section.slider {
 .nav-auto {
     position: absolute;
     width: 100%;
-    margin-top: 31%;
+    margin-top: 27.5%;
     display: flex;
     justify-content: center;
 }
@@ -239,8 +239,7 @@ section.slider {
     margin-left: -50%;
 }
 
-@media screen and (max-width: 1024px ) and (min: 
-767px) {
+@media screen and (max-width: 1024px) and (min: 767px) {
 
     .nav-auto,
     .nav-manual {
@@ -504,5 +503,19 @@ fab {
 
     p {
         font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .nav-manual,
+    .nav-auto {
+        position: absolute;
+        width: 100%;
+        margin-top: 95%;
+        display: flex;
+        justify-content: center;
+
+
     }
 }
