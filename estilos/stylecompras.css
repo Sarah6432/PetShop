@@ -821,11 +821,75 @@ fab {
 body {
     overflow-x: hidden;
 }
-#cupom-input:focus{
+
+#cupom-input:focus {
     border-color: #c65ad4;
     outline: none;
 }
-#cep:focus{
+
+#cep:focus {
     border-color: #c65ad4;
     outline: none;
+}
+
+@media screen and (max-width:600px) {
+    .pedido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 50px;
+        border: 1px solid #c65ad4;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: none;
+    }
+
+    .content-subtotal {
+        width: 360px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid #c65ad4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content-entrega {
+        width: 360px;
+        height: 50px;
+    }
+
+    .content-pre-total {
+        width: 360px;
+    }
+
+    .content-desconto {
+        width: 360px;
+    }
+
+    .formas-pag {
+        display: flex;
+        justify-content: center;
+        width: 360px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #b8b8b8;
+    }
+    .content-comprar{
+        width: 400px;
+        align-items: center;
+    }
+    #fechar-ped{
+        margin-left: 20.5%;
+    }
+    #add{
+        margin-left: 20%;
+    }
+    #prod{
+        margin-left: 0px;
+    }
+    .categorias{
+        width: 100% ;
+    }
 }
