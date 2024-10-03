@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="estilos/stylecompras.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
+    <script src="scripts/comprasFuncoes.js"></script>
 </head>
 
 <body>
@@ -41,17 +42,17 @@
                 <ul id="cart">
                     <li id="product" class="__web-inspector-hide-shortcut__">
                         <div class="product-info">
-                            <img id="itemImg" src="assets/raçãoimg.jpeg" alt="Ração Premier - Raças Específicas">
+                            <img id="itemImg" alt="imagem do produto">
                         </div>
-                        <p id="itemName">Ração Premier Para Raças Específicas - 1,01kg</p>
+                        <p id="itemName"></p>
                         <div class="product-price">
-                            <p id="itemPrice">R$130,00</p>
+                            <p id="itemPrice"></p>
                         </div>
                         <div class="button-group">
                             <button id="decreaseBtn">-</button>
                             <input type="number" id="itemQnt" min="1" max="100" value="1" readonly="true">
                             <button id="increaseBtn">+</button>
-                            <p class="remove-text" style="cursor: pointer;">Remover</p>
+                            <p class="remove-text" style="cursor: pointer;" onclick="goBack()">Remover</p>
                         </div>
                     </li>
                 </ul>
