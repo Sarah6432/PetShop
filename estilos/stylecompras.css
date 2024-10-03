@@ -142,7 +142,7 @@ li a {
     }
 }
 
-@media sreen and (max-width: 1630px) {
+@media screen and (max-width: 1630px) {
     .container-tabela {
         margin-left: 40px;
     }
@@ -901,8 +901,9 @@ body {
     .categorias .animais {
         text-decoration: none;
         color: rgb(198, 90, 212);
-        font-size: 15px;
+        font-size: 18px;
         transition: color 0.3s, transform 0.3s;
+
     }
 
     #prod {
@@ -910,6 +911,7 @@ body {
         border-right: none;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        margin-left: -10%;
     }
 
     #pre {
@@ -928,6 +930,26 @@ body {
         color: #2bd8d8;
         transform: scale(1.1);
     }
+    .img-nova {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+        margin-bottom: 5%;
+        object-fit: cover;
+        display: block;
+        gap: 0px;
+    }
+
+    #itemName {
+        color: #c65ad4;
+        text-align: left;
+        margin: 0%;
+    }
+
+    #itemPrice {
+        margin: 0%;
+    }
+    
 
 }
 
@@ -1103,7 +1125,7 @@ img {
     margin-top: 50%;
     margin-left: 8%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-auto-rows: 100px; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
     cursor: pointer;
 }
