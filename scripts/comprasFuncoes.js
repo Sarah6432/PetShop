@@ -1,5 +1,11 @@
 function addToCart(event) {
-  alert("Item foi adicionado ao carrinho");
+  var notificacao = document.getElementById('notificacao');
+    notificacao.classList.add('show');
+
+    
+    setTimeout(function() {
+        notificacao.classList.remove('show');
+    }, 3500);
 
   const card = event.target.closest('.card');
   const productName = card.querySelector('.card-name').textContent;

@@ -974,6 +974,7 @@ body {
     margin-left: 10px;
     margin-right: 10%;
     margin-bottom: 10%;
+    
 }
 
 img {
@@ -1048,6 +1049,7 @@ img {
     max-width: 150px;
     margin-bottom: 5%;
     object-fit: cover;
+    margin-left: -5%;
 }
 
 .div-nova {
@@ -1057,12 +1059,13 @@ img {
 .nome-novo {
     margin-left: -35%;
     margin-right: 5%;
+    text-align: center;
 
 }
 
 .preco-novo {
-    margin-right: 10%;
-    margin-left: 5%;
+    margin-right: 4%;
+    margin-left: 15%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 100px;
