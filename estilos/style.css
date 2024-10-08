@@ -548,3 +548,64 @@ fab {
     visibility: visible;
     transform: translateY(0); 
 }
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  button {
+    padding: 4px 5px;
+    font-size: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #c65ad4;
+    color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #2bd8d8;
+  }
+
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+  }
+
+  button.dark-mode {
+    background-color: #c65ad4;
+    color: #121212;
+  }
+  .card-name.dark-mode{
+    color: #fff;
+  }
+  nav.dark-mode{
+    background-color: #121212;
+    
+  }
+  .categorias.dark-mode{
+    background-color: #121212;
+    border: 1px solid black;
+  }
+  .card-preco.dark-mode{
+    background-color: #121212;
+    color: #fff;
+  }
+  .button-comprar.dark-mode{
+    background-color: #c65ad4;
+    color: #121212;
+  }
+  .desc.dark-mode{
+    color: #121212;
+  }
+  .card.dark-mode{
+    box-shadow: 8px 8px 10px black;
+  }
+  .button-comprar.dark-mode:hover{
+    background-color: #71dbdb
+  }
+  .search-bnt i.dark-mode{
+    color: #121212;
+  }

@@ -11,6 +11,7 @@
     <script src="scripts/script.js" defer></script>
     <script src="scripts/funcoes.js" defer></script>
     <script src="scripts/comprasFuncoes.js" defer></script>
+    <script src="scripts/color.js" defer></script>
     <link rel="shortcut icon" href="assets/logoofc.png">
 </head>
 
@@ -23,13 +24,13 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <nav class="icons">
-            <ul>
-                <li><a href="sobre-nos.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
-                <li><a href="formulário.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
-                <li><a href="endereco.html"><i class="fas fa-map-marker-alt" title="Endereço" class="menu"></i></a></li>
-                <li title="Entre ou cadastre-se"><a href="entrar.html">Entrar </a>|<a href="entrar.html"> Cadastrar</a></li>
-                <div class="animation start-home"></div>
-            </ul>
+<ul class="navM">
+    <button id="mode-tema"><i class="fas fa-lightbulb"></i></button>
+    <li class="liM"><a href="sobre-nos.html"><i class="fas fa-info-circle" title="sobre nós" class="menu"></i></a></li>
+    <li class="liM"><a href="formulário.html"><i class="fas fa-envelope" title="contato" class="menu"></i></a></li>
+    <li class="liM"><a href="entrar.html"><i class="fas fa-sign-in-alt" title="Faça login ou cadastre-se" class="menu"></i></a></li>
+    <div class="animation start-home"></div>
+  </ul>
         </nav>
     </header>
     <div class="categorias">
@@ -85,7 +86,7 @@
         <div class="cards">
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/racaoimg.webp" alt="ração com desconto" title="ração premier">
@@ -108,7 +109,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãoimg2.webp" alt="ração com desconto"
@@ -133,7 +134,7 @@
             </article>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãoimg3.webp" alt="ração com desconto"
@@ -157,7 +158,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãogato1.webp" alt="ração com desconto"
@@ -181,7 +182,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãogato2.webp" alt="ração com desconto"
@@ -229,7 +230,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãogato4.webp" alt="ração com desconto"
@@ -253,7 +254,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãopassaro1.webp"
@@ -277,7 +278,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãopassaro2.webp"
@@ -301,7 +302,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãopassaro3.webp"
@@ -325,7 +326,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/raçãopassaro4.webp"
@@ -349,7 +350,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/racaopeixes1.webp"
@@ -397,7 +398,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>50% OFF</p>
+                    <p class="desc">50% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/racaopeixes5.webp"
@@ -421,7 +422,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>10% OFF</p>
+                    <p class="desc">10% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/mimos1.webp" alt="banheiro inteligente"
@@ -445,7 +446,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>10% OFF</p>
+                    <p class="desc">10% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/mimos2.webp" alt="caminha"
@@ -469,7 +470,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>10% OFF</p>
+                    <p class="desc">10% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/mimos3.webp" alt="mordedor"
@@ -493,7 +494,7 @@
             </div>
             <article class="card">
                 <div class="disconto">
-                    <p>40% OFF</p>
+                    <p class="desc">40% OFF</p>
                 </div>
                 <div class="card-image">
                     <img class="produto" width="250" height="255" src="assets/mimos4.webp" alt="caminha"
